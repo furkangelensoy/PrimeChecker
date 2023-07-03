@@ -6,7 +6,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
         String numberLength = Integer.toString(number);
-        System.out.println(primeCounter(probablyNumber(number, numberLength)));
+        System.out.println(primeChecker(probablyNumber(number, numberLength)));
 
     }
 
@@ -84,7 +84,7 @@ public class Main {
 
     }
 
-    public static int primeCounter(int[] probablyNumbers) {
+    public static int primeChecker(int[] probablyNumbers) {
 
         int primeCounter = 0;
         for (int i = 0; i < probablyNumbers.length; i++) {
